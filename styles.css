@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header nav {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    padding: 0 16px;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    margin: 0 8px;
+    color: #071333;
+    font-size: 14px;
+}
+header nav ul li {
+    display: flex;
+    align-items: center;
+}
+header nav ul li span {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    width: 18px;
+    height: 18px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+header nav ul li span div {
+    background-color: #071333;
+    border-radius: 50%;
+}
+header nav ul li > div {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #071333, #1352ff);
+    margin-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+header nav > a {
+    color: #071333;
+    margin-right: auto;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+}
+header nav > a strong {
+    color: #1352ff;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 64px);
+    flex-direction: column;
+}
+main h1 {
+    font-size: 96px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: #071333;
+}
+main h1 strong {
+    color: #1352ff;
+}
+main form {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main form input[type="text"] {
+    width: 100%;
+    height: 42px;
+    border-radius: 30px;
+    background-color: #dfe7ff;
+    border: 1px solid #1352ff;
+    margin-bottom: 28px;
+    outline: none;
+    padding: 0 16px;
+    font-size: 16px;
+}
+main form input[type="text"]:focus,
+main form input[type="text"]:hover {
+    border: 1px solid #dfe7ff;
+    box-shadow: 0 0 8px #1352ff;
+}
+main form div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+main form div input[type="submit"] {
+    width: 140px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: #1352ff;
+    color: #fff;
+    font-size: 15px;
+    height: 38px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+main form div input[type="submit"]:hover {
+    background-color: #0039d6;
+}
+/* Options Advanced */
+main.advanced {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 32px;
+}
+main.advanced h1 {
+    font-size: 28px;
+    margin-bottom: 38px;
+}
+main.advanced form {
+    width: 760px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main.advanced form div.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-bottom: 32px;
+    align-content: center;
+    gap: 16px;
+}
+main.advanced form h2 {
+    margin-bottom: 20px;
+}
+main.advanced form div.options input[type="text"] {
+    width: 550px;
+    height: 28px;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+main.advanced form div.options label {
+    margin: auto 0;
+    font-size: 15px;
+}
+main.advanced form div.btn input {
+    margin-left: auto;
+}
+
+
